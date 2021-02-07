@@ -7,24 +7,26 @@
   <title>Notes</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <!-- <script src="moment.min.js" defer></script> -->
   <script src="script.js" async></script>
 </head>
 <body>
-  <h1>Note!</h1>
+  <header>
+    <h1>Notes!</h1>
+  </header>
   <form id="note-form">
 
     <div class="note-field">
-      <input id="note-title" type="text" placeholder="Enter your note title here">
-      <input id="note-text" type="text" placeholder="Enter your note here">
+      <input id="note-title" type="text" placeholder="Note Title">
+      <input id="note-text" type="text" placeholder="What's on your mind?">
     </div>
 
-    <div class="note-field">
-      <button id="save-todo" type="submit">Save Note</button>
+    <div class="save-note-field">
+      <button id="save-note" type="submit">Save My Note</button>
     </div>
 
   </form>
-
   <section id="notes">
     <ul id="note-list"></ul>
   </section>

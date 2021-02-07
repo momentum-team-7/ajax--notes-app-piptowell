@@ -52,8 +52,7 @@ function createNote (noteText, noteTitle) {
         body: JSON.stringify({
             title: noteTitle,
             body: noteText, 
-            // created_at: moment().format()  
-                // body: JSON.stringify({"title": "Hi", "body":            
+            // created_at: moment().format()           
         })
     })
         .then(res => res.json())
